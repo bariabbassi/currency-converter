@@ -1,0 +1,39 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: rgb(238, 176, 176);
+  font-family: 'Inter', sans-serif;
+  min-height: 100vh;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+h1 {
+  color: black;
+  font-weight: 700;
+  font-size: 3.5rem;
+}
+
+p {
+  color: rgb(48, 48, 48);
+  font-weight: 200;
+  font-size: 1.5rem;
+  margin: 40px;
+}
+
+a {
+  color: rgb(187, 54, 54);
+  font-weight: 200;
+  font-size: 1.5rem;
+  text-decoration: none;
+}
+
+a:hover {
+  color: rgb(221, 67, 67);
+}
