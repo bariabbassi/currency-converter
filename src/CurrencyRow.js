@@ -1,4 +1,5 @@
 import React from 'react'
+import './CurrencyRow.css'
 
 export default function CurrencyRow(props) {
     const {

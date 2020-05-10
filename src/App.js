@@ -1,6 +1,7 @@
 import React, {useState, useEffect} from 'react';
 import CurrencyRow from './CurrencyRow'
 import axios from 'axios';
+import './App.css';
 
 function App() {
   const [currencies, setCurrencies] = useState([])
@@ -69,7 +70,11 @@ function App() {
   return (
     <div className="App">
 
-      <header className='title'>Currency Converter</header>
+      <header className='title'>
+        <h1>Currency Converter</h1>
+        <p>Powered by <a href="http://exchangeratesapi.io/">Exchange rates API</a>
+        </p>
+      </header>
 
       <CurrencyRow
         currencies={currencies}
