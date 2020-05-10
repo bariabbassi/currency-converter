@@ -1,4 +1,4 @@
-# Currency Converter
+# :currency_exchange: Currency Converter
 Convert currency using the [Exchange rates API](http://exchangeratesapi.io/).
 
 ![alt text](https://github.com/bariabbassi/currency-converter/blob/master/screenshot.png)
