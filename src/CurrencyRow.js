@@ -7,12 +7,12 @@ export default function CurrencyRow(props) {
         rowCurrency,
         onChangeCurrency,
         amount,
-        onChangeAmount
+        isFromAmountSelected
     } = props
 
     return (
         <div className='CurrencyRow'>
-            <input className='amount' type='number' value={amount} onChange={onChangeAmount} min='0' />
+            <input className='amount' type='number' value={amount} onChange={isFromAmountSelected} min='0' />
             <select className='dropdown' value={rowCurrency} onChange={onChangeCurrency} >
                 {currencies.map(currency => <option key={currency}>{currency}</option>)}
             </select>

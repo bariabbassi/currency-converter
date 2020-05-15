@@ -1,5 +1,5 @@
 import React, {useState, useEffect} from 'react';
-import CurrencyRow from './CurrencyRow'
+import CurrencyRow from './CurrencyRow';
 import axios from 'axios';
 import './App.css';
 
@@ -9,7 +9,7 @@ function App() {
   const [toCurrency, setToCurrency] = useState('USD')
   const [fromAmount, setFromAmount] = useState(0)
   const [toAmount, setToAmount] = useState(0)
-  const [isFromAmountSelected, setOnChangeAmount] = useState(true)
+  const [isFromAmountSelected, setIsFromAmountSelected] = useState(true)
 
   useEffect(() => {
     axios({
@@ -82,7 +82,7 @@ function App() {
         onChangeCurrency={e => setFromCurrency(e.target.value)}
         amount={fromAmount}
         isFromAmountSelected={e => {
-          setOnChangeAmount(true)
+          setIsFromAmountSelected(true)
           setFromAmount(e.target.value)
         }}
       />
@@ -93,7 +93,7 @@ function App() {
         onChangeCurrency={e => setToCurrency(e.target.value)}
         amount={toAmount}
         isFromAmountSelected={e => {
-          setOnChangeAmount(false)
+          setIsFromAmountSelected(false)
           setToAmount(e.target.value)
         }}
       />

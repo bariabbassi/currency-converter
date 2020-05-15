@@ -5,7 +5,7 @@
 }
 
 body {
-  background-color: rgb(238, 176, 176);
+  background-color: white;
   min-height: 100vh;
   text-align: center;
   display: flex;
